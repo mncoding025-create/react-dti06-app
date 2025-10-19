@@ -1,4 +1,5 @@
 import React from 'react' 
+import { Link } from 'react-router-dom'
 import img1 from '../assets/img1.png'
 import img2 from '../assets/img2.png'
 import img3 from '../assets/img3.png'
@@ -23,28 +24,35 @@ export default function Home() {
         </div>
         <br />
         <div mt-10>
-          <span className='text-[#3333333] text-lg'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
-            Beatae veniam consequatur ullam impedit fugiat nulla delectus <br />
-            incidunt tenetur optio necessitatibus autem, aut veritatis amet? <br />
-            Quibusdam qui odio ullam delectus vitae. 
+          <span className='text-[#333333] text-lg'>
+            Lorem ipsum dolor sit amet consectetur adipisicing <br />
+            elit.Beatae veniam consequatur ullam impedit fugiat <br />
+            nulla delectus incidunt tenetur optio necessitatibus <br />
+            autem, aut veritatis amet? Quibusdam qui odio ullam delectus vitae. 
           </span>
         </div>
-        <br />
-        <div mt-7>
-          <a href='#' className='bg-[#333333] text-white rounded-4xl py-4 px-8'>
+        <div className='mt-8'>
+          <a href='#' className='bg-[#333333] text-white rounded-full py-4 px-8'>
             Follow Me
           </a>
         </div>
-        <div className='mt-10 flex'>
-          <img src={img1} alt="img1" className='w-70 h-min mr-5' />
-          <img src={img2} alt="img2" className='w-70 h-min' />
+        <div className='mt-10 flex gap-x-5'>
+            <Link to="/pageA">
+                <img src={img1} alt="img1" className='w-70 h-min mr-5' /> 
+            </Link>
+            <Link to="/pageB">
+                <img src={img2} alt="img2" className='w-72 h-min mr-5' />
+            </Link>
         </div>
       </div>
     {/* ส่วนที่ 2 */}
-      <div className='flex gap-8 mr-10'>
-        <img src={img3} alt="img3" className='w=58 h-min' />
-        <img src={img4} alt="img4" className='w-36 h-min' />
+      <div className='flex gap-10 ml-10'>
+        <Link to ="/pageC">
+          <img src={img3} alt="img3" className='w=58 h-min' />
+        </Link>
+        <Link to ="/pageD">
+          <img src={img4} alt="img4" className='w-40 h-min' />
+        </Link>
       </div>
 
     </div>
