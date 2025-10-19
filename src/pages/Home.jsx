@@ -37,20 +37,20 @@ export default function Home() {
           </a>
         </div>
         <div className='mt-10 flex gap-x-5'>
-            <Link to="/pageA">
+            <Link to="/PageA">
                 <img src={img1} alt="img1" className='w-70 h-min mr-5' /> 
             </Link>
-            <Link to="/pageB">
+            <Link to="/PageB">
                 <img src={img2} alt="img2" className='w-72 h-min mr-5' />
             </Link>
         </div>
       </div>
     {/* ส่วนที่ 2 */}
       <div className='flex gap-10 ml-10'>
-        <Link to ="/pageC">
+        <Link to ="/PageC">
           <img src={img3} alt="img3" className='w=58 h-min' />
         </Link>
-        <Link to ="/pageD">
+        <Link to ="/PageD">
           <img src={img4} alt="img4" className='w-40 h-min' />
         </Link>
       </div>
