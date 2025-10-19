@@ -9,18 +9,18 @@ export default function PageB() {
     <div className="bg-black text-white min-h-screen font-sans">
       
       {/* แถบบน */}
-    <header className="py-4">
+     <header className="flex justify-center items-center py-4">
         
-        {/* 2. แก้ไข: nav จะจัดการความกว้างและจัดกลางตัวเอง */}
-        <nav className="flex justify-between items-center w-full max-w-7xl bg-[#1a1a1a] rounded-lg px-8 py-4 mx-auto">
+        {/* 2. เพิ่ม mx-8 md:mx-16 เข้าไปใน nav */}
+        <nav className="flex justify-between items-center w-full max-w-7xl bg-[#1a1a1a] rounded-lg px-8 py-4 mx-8 md:mx-16">
           
           {/* (เนื้อหาด้านในเหมือนเดิม) */}
-          <div className="flex gap-x-8 text-sm text-gray-300">
-            <a href="#" className="hover:text-white transition-colors">Home</a>
-            <a href="#" className="hover:text-white transition-colors">Case Studies</a>
-            <a href="#" className="hover:text-white transition-colors">Testimonials</a>
-            <a href="#" className="hover:text-white transition-colors">Recent work</a>
-            <a href="#" className="hover:text-white transition-colors">Get In Touch</a>
+          <div className="flex gap-x-35 ml-10 text-sm text-gray-300">
+            <a href="#" className="hover:text-[#333333] transition-colors">Home</a>
+            <a href="#" className="hover:text-[#333333] transition-colors">Case Studies</a>
+            <a href="#" className="hover:text-[#333333] transition-colors">Testimonials</a>
+            <a href="#" className="hover:text-[#333333] transition-colors">Recent work</a>
+            <a href="#" className="hover:text-[#333333] transition-colors">Get In Touch</a>
           </div>
 
           <div className="flex gap-x-6 items-center text-gray-300">
