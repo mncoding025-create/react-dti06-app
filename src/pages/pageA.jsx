@@ -2,28 +2,30 @@ import React from 'react'
 import pageA01 from '../assets/pageA01.png'
 import { FaGithub, FaInstagram, FaTwitter, FaLinkedinIn } from 'react-icons/fa'
 
-export default function pageA() {
+// 1. แก้ไข: ชื่อ Component ใน React ต้องขึ้นต้นด้วยตัวพิมพ์ใหญ่
+export default function PageA() {
   const mintColor = "#00f7a5"
 
   return (
-    <div>
-      <div className="bg-[#0f0f0f] text-white min-h-screen font-sans p-8">
+    // 2. แก้ไข: ลบ <div> ครอบชั้นนอกสุดที่ไม่จำเป็นออก
+    <div className="bg-[#0f0f0f] text-white min-h-screen font-sans p-8">
       
       {/* ======== Header / Navbar ======== */}
       <header className="flex justify-between items-center max-w-7xl mx-auto py-4">
         
         {/* Left Links */}
         <nav className="flex gap-x-8 text-sm">
-          <a href="#" className="hover:text-[${mintColor}] transition-colors">Portfolio</a>
-          <a href="#" className="hover:text-[${mintColor}] transition-colors">About Me</a>
-          <a href="#" className="hover:text-[${mintColor}] transition-colors">Get in Touch</a>
+          {/* 3. แก้ไข: Syntax ของ Tailwind ไม่รองรับ ${} ต้องใส่ค่าสีตรงๆ */}
+          <a href="#" className="hover:text-[#00f7a5] transition-colors">Portfolio</a>
+          <a href="#" className="hover:text-[#00f7a5] transition-colors">About Me</a>
+          <a href="#" className="hover:text-[#00f7a5] transition-colors">Get in Touch</a>
         </nav>
 
         {/* Middle Logo */}
         <div>
           <span 
             className="text-3xl italic" 
-            style={{ color: mintColor, fontFamily: 'cursive' }} // ใช้ font-family: 'cursive' หรือฟอนต์เฉพาะถ้ามี
+            style={{ color: mintColor, fontFamily: 'cursive' }}
           >
             hello
           </span>
@@ -59,7 +61,8 @@ export default function pageA() {
           style={{ borderColor: mintColor, borderWidth: '2px' }}
         >
           <img 
-            src={profilePic} 
+            // 4. แก้ไข: เปลี่ยน src จาก profilePic เป็น pageA01
+            src={pageA01} 
             alt="Profile" 
             className="rounded-full w-48 h-48 object-cover" 
           />
