@@ -10,11 +10,7 @@ export default function PageB() {
       
       {/* แถบบน */}
      <header className="flex justify-center items-center py-4">
-        
-        {/* 2. เพิ่ม mx-8 md:mx-16 เข้าไปใน nav */}
         <nav className="flex justify-between items-center w-full max-w-7xl bg-[#1a1a1a] rounded-lg px-8 py-4 mx-8 md:mx-16">
-          
-          {/* (เนื้อหาด้านในเหมือนเดิม) */}
           <div className="flex gap-x-35 ml-10 text-sm text-gray-300">
             <a href="#" className="hover:text-[#333333] transition-colors">Home</a>
             <a href="#" className="hover:text-[#333333] transition-colors">Case Studies</a>
@@ -33,8 +29,6 @@ export default function PageB() {
 
 
       <main className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between mt-24 px-8 md:px-16 gap-16">
-        
-
         <div className="w-full md:w-1/2">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
             Sombat Jaideemak
