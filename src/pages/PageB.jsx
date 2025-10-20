@@ -30,16 +30,13 @@ export default function PageB() {
 
       <main className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between mt-24 px-8 md:px-16 gap-16">
         <div className="w-full md:w-1/2">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            Sombat Jaideemak
+          <h1 style={{ frontfamily : 'Raleway'}} className="text-5xl md:text-6xl font-bold mb-6">
+            Chakrit Boonchuay
           </h1>
           <p className="text-gray-300 text-lg leading-relaxed mb-10">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt rem odit labore unde nemo omnis sequi hic sit laudantium, ipsa nisi eos autem.
           </p>
-          <a 
-            href="#" 
-            className="bg-lime-500 text-black font-bold text-lg px-10 py-4 rounded-md inline-flex items-center gap-x-2 transition-transform hover:scale-105"
-          >
+          <a href="#" style={{ fontFamily : 'IBM Plex Mono'}} className="bg-lime-500 text-black font-bold text-lg px-10 py-4 rounded-md inline-flex items-center gap-x-2 transition-transform hover:scale-105">
             Let's get started &gt;
           </a>
         </div>
